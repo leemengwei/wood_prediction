@@ -16,6 +16,7 @@ Files are:
 Operations to get result:
 Opertaions and result images are:
 ---恒定荷载情况---：
+
 程序接口说明：（单体木材的损伤过程在长时间实验中默认不显示，如要观察中间过程，可以设置Test_years_to_run<0.1）
 
 实验1-1
@@ -34,33 +35,49 @@ python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --V --num_o
 
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --V --num_of_batch=50 --Years_to_run=50 --Restart --Test_years_to_run=50  --Alter_force_scaler=1.0 --Restart --epoch=-1 --Q
 
-结果：
-
-
-
 ---可变荷载情况---：
+
 程序接口说明：（单体木材的损伤过程在长时间实验中默认不显示，如要观察中间过程，可以设置Test_years_to_run<0.1）
+
 实验2-1：
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.0
+
 实验2-1（参考数据生成）：
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=0.75
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25
+
 结果2-1-1：
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=0.75 --Restart --epoch=-1 --Q
+
 结果2-1-2：
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25 --Restart --epoch=-1 --Q
 
-实验2-2：
-python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.0
-实验2-1（参考数据生成）：
-python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=0.75
-python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25
-结果2-2-1：
-python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.0 --Restart --epoch=-1 --Q
-结果2-2-2：
-python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=0.75 --Restart --epoch=-1 --Q
-结果2-2-3：
-python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25 --Restart --epoch=-1 --Q
 
-结果：
+
+实验2-2：
+
+python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.0
+
+实验2-1（参考数据生成）：
+
+python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=0.75
+
+python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25
+
+结果2-2-1：
+
+python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.0 --Restart --epoch=-1 --Q
+
+结果2-2-2：
+
+python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=0.75 --Restart --epoch=-1 --Q
+
+结果2-2-3：
+
+python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25 --Restart --epoch=-1 --Q
 
