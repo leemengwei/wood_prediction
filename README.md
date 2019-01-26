@@ -16,15 +16,24 @@ Files are:
 Operations to get result:
 Opertaions and result images are:
 ---恒定荷载情况---：
-程序接口说明：（单体木材的损伤过程在长时间实验中默认不显示，如要观察中间过程，可以设置Test_years_to_run<0.1）
+程序接口说明：（单体木材的损伤过程在长时间实验中默认不显示，如要观察中间过程，可以设置Test_years_to_run<0.1）
+
 实验1-1
+
 python train_model.py --N=1000 --num_of_forces=2 --wood_types="All" --Years_to_run=50 --num_of_batch=50 --V --Test_years_to_run=50  --Alter_force_scaler=1.0
+
 结果1-1：
+
 python train_model.py --N=1000 --num_of_forces=2 --wood_types="All" --V --num_of_batch=50 --Years_to_run=50 --Test_years_to_run=50  --Alter_force_scaler=1.0 --Restart --epoch=-1 --Q
+
 实验1-2
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --V --num_of_batch=50 --Years_to_run=50 --Test_years_to_run=50  --Alter_force_scaler=1.0
+
 结果1-2：
+
 python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --V --num_of_batch=50 --Years_to_run=50 --Restart --Test_years_to_run=50  --Alter_force_scaler=1.0 --Restart --epoch=-1 --Q
+
 结果：
 
 
