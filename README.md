@@ -9,8 +9,10 @@ Tongji's wood damge prediction project intending to predict different types of w
 # wood_prediction
 
 Tongji's wood damge prediction project intending to predict different types of wood damage under different load or situations.
+
 整体思路：
 ![Image text](https://raw.githubusercontent.com/leemengwei/wood_prediction/master/images/Overall.png)
+
 考虑不同木材性质、不同负载情况，从校准后的传统数学模型中采样，记录的数据不光包含其破坏时间曲线，更包含每一个样本在整个实验过程中的损伤过程。把这些损伤过程离散打乱，尝试使用神经网络来学习其中的损伤关系。
 
 
@@ -89,4 +91,3 @@ python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years
 ![Image text](https://raw.githubusercontent.com/leemengwei/wood_prediction/master/images/2-2-3out.png)
 python train_model.py --N=1000 --num_of_forces=100 --wood_types="SPF_Q1" --Years_to_run=50 --num_of_batch=500 --V --Test_years_to_run=50  --Alter_force_scaler=1.25 --Restart --epoch=-1 --Q
 
->>>>>>> 03c656c1cd2ae1f77d5bbada24e51a23be3a59cf
