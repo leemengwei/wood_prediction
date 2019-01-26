@@ -4,7 +4,7 @@ Tongji's wood damge prediction project intending to predict different types of w
 
 1.differential_model.py
 
-----which implements Foschi's and Yao's model, train_model.py will need this to provide training data for the network,
+----which implements Foschi's and Yao's model, train_model.py will need this to provide data label for training. 
 
 2.train_model.py
 ----which utilizes Pytorch calling differential_model.py to get data, and to train/validate a network predicting wood internal damage. Test is also within this code by calling '--epoch=-1', and will given stastical result comparing to classical Foschi model.
