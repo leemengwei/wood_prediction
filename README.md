@@ -37,7 +37,7 @@ python train_model.py --N=1000 --num_of_forces=10 --wood_types="All" --V --num_o
 
 ---可变荷载情况---：
 
-程序接口说明：（单体木材的损伤过程在长时间实验中默认不显示，如要观察中间过程，可以设置Test_years_to_run<0.1）
+程序接口说明：（单体木材的损伤过程在长时间实验中默认不显示，如要观察中间过程，可以设置Test_years_to_run<0.1）
 
 实验2-1：
 
